@@ -7,60 +7,54 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About Laravel
+# Requirement/Persyaratan
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Php versi 8.1
+- Cara menginstal php dalam bahasa indonesia : <a href="https://youtu.be/Uw3ZGIMvIdA?si=mBVZ-lBnoCilASzo"> install php
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## Laravel versi 10.2.5
+- cara menginstal laravel yang versi yang sama : 
+```
+composer create-project laravel/laravel=v10.2.5 belajar-laravel-RESTful-api
+```
+---
+# Cara Menjalankan/Run
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- cd belajar-laravel-RESTful-api
 
-## Learning Laravel
+- npm install
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+# Materi/Pembahasan
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+## Apa itu API
+- RESTful API adalah jenis API (Application Programming Interface) yang menggunakan prinsip REST (Representational State Transfer) untuk memungkinkan komunikasi antara berbagai sistem perangkat lunak melalui HTTP. RESTful API sering digunakan untuk mengakses dan mengelola sumber daya di web.
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Berikut adalah beberapa konsep utama dalam RESTful API:
 
-## Laravel Sponsors
+    1 . Resource (Sumber Daya): Setiap elemen yang dapat diakses atau dimanipulasi oleh API dianggap sebagai sumber daya. Sumber daya ini diidentifikasi oleh URL (Uniform Resource Locator).
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+    2 . HTTP Verbs (Kata Kerja HTTP): RESTful API menggunakan metode HTTP untuk mengoperasikan sumber daya. Metode yang paling umum digunakan adalah:
 
-### Premium Partners
+    - GET: Untuk mengambil data dari server.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
+    - POST: Untuk mengirim data ke server dan biasanya digunakan untuk membuat sumber daya baru.
 
-## Contributing
+    - PUT: Untuk memperbarui sumber daya yang ada di server.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+    - DELETE: Untuk menghapus sumber daya dari server.
 
-## Code of Conduct
+    3 . Stateless (Tanpa Keadaan): Setiap permintaan dari klien ke server harus berisi semua informasi yang diperlukan untuk memahami dan memproses permintaan tersebut. Server tidak menyimpan konteks apapun dari permintaan sebelumnya.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+    4 . Uniform Interface (Antarmuka Seragam): RESTful API harus memiliki antarmuka yang konsisten dan standar yang memungkinkan interaksi yang mudah antara sistem yang berbeda. Ini termasuk:
 
-## Security Vulnerabilities
+    - Identifikasi sumber daya melalui URL.
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+    - Manipulasi sumber daya melalui representasi yang diwakili (seperti JSON atau XML).
 
-## License
+    - Penggunaan standar HTTP methods (GET, POST, PUT, DELETE).
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+    5 . Client-Server Architecture (Arsitektur Klien-Server): Klien dan server harus saling terpisah sehingga masing-masing dapat dikembangkan dan diskalakan secara independen.
+
+    6 . Cacheable (Dapat Di-cache): Respons dari server dapat di-cache oleh klien untuk meningkatkan performa dan efisiensi.
+
+## belum selesai
